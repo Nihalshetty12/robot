@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-13T16:31:20.997961" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment1" source="C:\Users\shett\PycharmProjects\robotframework\Assignment\assignment1.robot">
+<test id="s1-t1" name="Test List and Dict Operations" line="30">
+<kw name="Append To My List">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.037413" elapsed="0.000212"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-02-13T16:31:21.037071" elapsed="0.000633"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.037879" elapsed="0.000160"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-02-13T16:31:21.037800" elapsed="0.000281"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.038241" elapsed="0.000247"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-02-13T16:31:21.038156" elapsed="0.000401"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.038713" elapsed="0.000110"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-02-13T16:31:21.038660" elapsed="0.000197"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.038986" elapsed="0.000110"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2025-02-13T16:31:21.038932" elapsed="0.000195"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.039290" elapsed="0.000132"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2025-02-13T16:31:21.039229" elapsed="0.000225"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.039648" elapsed="0.000122"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2025-02-13T16:31:21.039552" elapsed="0.000247"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.039910" elapsed="0.000111"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2025-02-13T16:31:21.039858" elapsed="0.000192"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.040163" elapsed="0.000107"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2025-02-13T16:31:21.040110" elapsed="0.000189"/>
+</iter>
+<iter>
+<kw name="Append To List" owner="Collections">
+<arg>${NUMBERS}</arg>
+<arg>${i}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.040416" elapsed="0.000110"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2025-02-13T16:31:21.040361" elapsed="0.000195"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>11</value>
+<status status="PASS" start="2025-02-13T16:31:21.036849" elapsed="0.003729"/>
+</for>
+<status status="PASS" start="2025-02-13T16:31:21.036582" elapsed="0.004058"/>
+</kw>
+<kw name="Append To My Dict">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-02-13T16:31:21.041232" level="INFO">${keys} = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']</msg>
+<var>${keys}</var>
+<arg>a</arg>
+<arg>b</arg>
+<arg>c</arg>
+<arg>d</arg>
+<arg>e</arg>
+<arg>f</arg>
+<arg>g</arg>
+<arg>h</arg>
+<arg>i</arg>
+<arg>j</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.041096" elapsed="0.000161"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-02-13T16:31:21.041500" level="INFO">${values} = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']</msg>
+<var>${values}</var>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>4</arg>
+<arg>5</arg>
+<arg>6</arg>
+<arg>7</arg>
+<arg>8</arg>
+<arg>9</arg>
+<arg>10</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.041368" elapsed="0.000153"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-02-13T16:31:21.041767" level="INFO">${ALPHA_DICT} = {}</msg>
+<var>${ALPHA_DICT}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.041624" elapsed="0.000163"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.041988" elapsed="0.000177"/>
+</kw>
+<var name="${index}">0</var>
+<status status="PASS" start="2025-02-13T16:31:21.041934" elapsed="0.000265"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.042316" elapsed="0.000153"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2025-02-13T16:31:21.042260" elapsed="0.000241"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.042621" elapsed="0.000149"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2025-02-13T16:31:21.042563" elapsed="0.000240"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.042920" elapsed="0.000148"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2025-02-13T16:31:21.042865" elapsed="0.000235"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.043212" elapsed="0.000152"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2025-02-13T16:31:21.043161" elapsed="0.000237"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.043515" elapsed="0.000152"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2025-02-13T16:31:21.043463" elapsed="0.000238"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.043810" elapsed="0.000147"/>
+</kw>
+<var name="${index}">6</var>
+<status status="PASS" start="2025-02-13T16:31:21.043759" elapsed="0.000352"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.044287" elapsed="0.000209"/>
+</kw>
+<var name="${index}">7</var>
+<status status="PASS" start="2025-02-13T16:31:21.044198" elapsed="0.000331"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.044665" elapsed="0.000168"/>
+</kw>
+<var name="${index}">8</var>
+<status status="PASS" start="2025-02-13T16:31:21.044589" elapsed="0.000277"/>
+</iter>
+<iter>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${ALPHA_NUM}</arg>
+<arg>${keys}[${index}]</arg>
+<arg>${values}[${index}]</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.044986" elapsed="0.000160"/>
+</kw>
+<var name="${index}">9</var>
+<status status="PASS" start="2025-02-13T16:31:21.044926" elapsed="0.000276"/>
+</iter>
+<var>${index}</var>
+<value>10</value>
+<status status="PASS" start="2025-02-13T16:31:21.041831" elapsed="0.003418"/>
+</for>
+<status status="PASS" start="2025-02-13T16:31:21.040912" elapsed="0.004427"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T16:31:21.045736" level="INFO">Initial List: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</msg>
+<arg>Initial List: ${NUMBERS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.045604" elapsed="0.000171"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T16:31:21.046160" level="INFO">Initial Dictionary: {'a': '1', 'b': '2', 'c': '3', 'd': '4', 'e': '5', 'f': '6', 'g': '7', 'h': '8', 'i': '9', 'j': '10'}</msg>
+<arg>Initial Dictionary: ${ALPHA_NUM}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.045991" elapsed="0.000206"/>
+</kw>
+<kw name="Remove Last Element from List">
+<kw name="Delete Last Element" owner="remove_last">
+<msg time="2025-02-13T16:31:21.046831" level="INFO">${NUMBERS} = [1, 2, 3, 4, 5, 6, 7, 8, 9]</msg>
+<var>${NUMBERS}</var>
+<arg>${NUMBERS}</arg>
+<status status="PASS" start="2025-02-13T16:31:21.046699" elapsed="0.000152"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T16:31:21.047047" level="INFO">Updated List: [1, 2, 3, 4, 5, 6, 7, 8, 9]</msg>
+<arg>Updated List: ${NUMBERS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.046944" elapsed="0.000137"/>
+</kw>
+<status status="PASS" start="2025-02-13T16:31:21.046424" elapsed="0.000700"/>
+</kw>
+<kw name="Remove Last Element from Dict">
+<kw name="Delete Last Element" owner="remove_last">
+<msg time="2025-02-13T16:31:21.047609" level="INFO">${ALPHA_NUM} = {'a': '1', 'b': '2', 'c': '3', 'd': '4', 'e': '5', 'f': '6', 'g': '7', 'h': '8', 'i': '9'}</msg>
+<var>${ALPHA_NUM}</var>
+<arg>${ALPHA_NUM}</arg>
+<status status="PASS" start="2025-02-13T16:31:21.047481" elapsed="0.000149"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-13T16:31:21.047797" level="INFO">Updated Dict: {'a': '1', 'b': '2', 'c': '3', 'd': '4', 'e': '5', 'f': '6', 'g': '7', 'h': '8', 'i': '9'}</msg>
+<arg>Updated Dict: ${ALPHA_NUM}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-13T16:31:21.047701" elapsed="0.000128"/>
+</kw>
+<status status="PASS" start="2025-02-13T16:31:21.047321" elapsed="0.000551"/>
+</kw>
+<status status="PASS" start="2025-02-13T16:31:21.035893" elapsed="0.012155"/>
+</test>
+<status status="PASS" start="2025-02-13T16:31:20.999544" elapsed="0.049174"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Assignment1" id="s1" pass="1" fail="0" skip="0">Assignment1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
