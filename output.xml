@@ -1,317 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-13T16:31:20.997961" rpa="false" schemaversion="5">
-<suite id="s1" name="Assignment1" source="C:\Users\shett\PycharmProjects\robotframework\Assignment\assignment1.robot">
-<test id="s1-t1" name="Test List and Dict Operations" line="30">
-<kw name="Append To My List">
-<for flavor="IN RANGE">
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.037413" elapsed="0.000212"/>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-19T15:48:42.838210" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Login" source="C:\Users\shett\PycharmProjects\robotframework\assignment_2\amazon_login.robot">
+<test id="s1-t1" name="Amazon Sign in" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-19T15:48:43.125560" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.in/?&amp;tag=googhydrabk1-21&amp;ref=pd_sl_5szpgfto9i_e&amp;adgrpid=155259813593&amp;hvpone=&amp;hvptwo=&amp;hvadid=674893540034&amp;hvpos=&amp;hvnetw=g&amp;hvrand=17906269698129276827&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9303628&amp;hvtargid=kwd-64107830&amp;hydadcr=14452_2316413&amp;gad_source=1'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-19T15:48:43.125265" elapsed="5.923026"/>
 </kw>
-<var name="${i}">1</var>
-<status status="PASS" start="2025-02-13T16:31:21.037071" elapsed="0.000633"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.037879" elapsed="0.000160"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-19T15:48:49.049105" elapsed="0.158561"/>
 </kw>
-<var name="${i}">2</var>
-<status status="PASS" start="2025-02-13T16:31:21.037800" elapsed="0.000281"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.038241" elapsed="0.000247"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T15:48:49.208966" level="INFO">Clicking element '//span[@id="nav-link-accountList-nav-line-1"]'.</msg>
+<arg>${ACCOUNTS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T15:48:49.208197" elapsed="1.162927"/>
 </kw>
-<var name="${i}">3</var>
-<status status="PASS" start="2025-02-13T16:31:21.038156" elapsed="0.000401"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.038713" elapsed="0.000110"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_INPUT}</arg>
+<arg>3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-19T15:48:50.371380" elapsed="0.020966"/>
 </kw>
-<var name="${i}">4</var>
-<status status="PASS" start="2025-02-13T16:31:21.038660" elapsed="0.000197"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.038986" elapsed="0.000110"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T15:48:50.392837" level="INFO">Clicking element '//input[@id="ap_email"]'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T15:48:50.392625" elapsed="0.060399"/>
 </kw>
-<var name="${i}">5</var>
-<status status="PASS" start="2025-02-13T16:31:21.038932" elapsed="0.000195"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.039290" elapsed="0.000132"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-19T15:48:50.453833" level="INFO">Typing text 'shettynihal2004@gmail.com' into text field '//input[@id="ap_email"]'.</msg>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T15:48:50.453510" elapsed="0.098391"/>
 </kw>
-<var name="${i}">6</var>
-<status status="PASS" start="2025-02-13T16:31:21.039229" elapsed="0.000225"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.039648" elapsed="0.000122"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CONTINUE}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-19T15:48:50.552258" elapsed="0.017425"/>
 </kw>
-<var name="${i}">7</var>
-<status status="PASS" start="2025-02-13T16:31:21.039552" elapsed="0.000247"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.039910" elapsed="0.000111"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T15:48:50.570258" level="INFO">Clicking element '//input[@id="continue"]'.</msg>
+<arg>${CONTINUE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T15:48:50.569928" elapsed="0.524149"/>
 </kw>
-<var name="${i}">8</var>
-<status status="PASS" start="2025-02-13T16:31:21.039858" elapsed="0.000192"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.040163" elapsed="0.000107"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${pass_input}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-19T15:48:51.094433" elapsed="0.176112"/>
 </kw>
-<var name="${i}">9</var>
-<status status="PASS" start="2025-02-13T16:31:21.040110" elapsed="0.000189"/>
-</iter>
-<iter>
-<kw name="Append To List" owner="Collections">
-<arg>${NUMBERS}</arg>
-<arg>${i}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.040416" elapsed="0.000110"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T15:48:51.271207" level="INFO">Clicking element '//input[@id="ap_password"]'.</msg>
+<arg>${PASS_INPUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T15:48:51.270985" elapsed="0.050178"/>
 </kw>
-<var name="${i}">10</var>
-<status status="PASS" start="2025-02-13T16:31:21.040361" elapsed="0.000195"/>
-</iter>
-<var>${i}</var>
-<value>1</value>
-<value>11</value>
-<status status="PASS" start="2025-02-13T16:31:21.036849" elapsed="0.003729"/>
-</for>
-<status status="PASS" start="2025-02-13T16:31:21.036582" elapsed="0.004058"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-19T15:48:51.321619" level="INFO">Typing text 'Nihal@120304' into text field '//input[@id="ap_password"]'.</msg>
+<arg>${PASS_INPUT}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T15:48:51.321400" elapsed="0.051943"/>
 </kw>
-<kw name="Append To My Dict">
-<kw name="Create List" owner="BuiltIn">
-<msg time="2025-02-13T16:31:21.041232" level="INFO">${keys} = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']</msg>
-<var>${keys}</var>
-<arg>a</arg>
-<arg>b</arg>
-<arg>c</arg>
-<arg>d</arg>
-<arg>e</arg>
-<arg>f</arg>
-<arg>g</arg>
-<arg>h</arg>
-<arg>i</arg>
-<arg>j</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.041096" elapsed="0.000161"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PASS_ENTER}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-19T15:48:51.373727" elapsed="0.014128"/>
 </kw>
-<kw name="Create List" owner="BuiltIn">
-<msg time="2025-02-13T16:31:21.041500" level="INFO">${values} = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']</msg>
-<var>${values}</var>
-<arg>1</arg>
-<arg>2</arg>
-<arg>3</arg>
-<arg>4</arg>
-<arg>5</arg>
-<arg>6</arg>
-<arg>7</arg>
-<arg>8</arg>
-<arg>9</arg>
-<arg>10</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.041368" elapsed="0.000153"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-19T15:48:51.388280" level="INFO">Clicking element '//input[@id="signInSubmit"]'.</msg>
+<arg>${PASS_ENTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-19T15:48:51.388088" elapsed="0.063193"/>
 </kw>
-<kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-02-13T16:31:21.041767" level="INFO">${ALPHA_DICT} = {}</msg>
-<var>${ALPHA_DICT}</var>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.041624" elapsed="0.000163"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T15:49:01.452163" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T15:48:51.451737" elapsed="10.000525"/>
 </kw>
-<for flavor="IN RANGE">
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.041988" elapsed="0.000177"/>
-</kw>
-<var name="${index}">0</var>
-<status status="PASS" start="2025-02-13T16:31:21.041934" elapsed="0.000265"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.042316" elapsed="0.000153"/>
-</kw>
-<var name="${index}">1</var>
-<status status="PASS" start="2025-02-13T16:31:21.042260" elapsed="0.000241"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.042621" elapsed="0.000149"/>
-</kw>
-<var name="${index}">2</var>
-<status status="PASS" start="2025-02-13T16:31:21.042563" elapsed="0.000240"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.042920" elapsed="0.000148"/>
-</kw>
-<var name="${index}">3</var>
-<status status="PASS" start="2025-02-13T16:31:21.042865" elapsed="0.000235"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.043212" elapsed="0.000152"/>
-</kw>
-<var name="${index}">4</var>
-<status status="PASS" start="2025-02-13T16:31:21.043161" elapsed="0.000237"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.043515" elapsed="0.000152"/>
-</kw>
-<var name="${index}">5</var>
-<status status="PASS" start="2025-02-13T16:31:21.043463" elapsed="0.000238"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.043810" elapsed="0.000147"/>
-</kw>
-<var name="${index}">6</var>
-<status status="PASS" start="2025-02-13T16:31:21.043759" elapsed="0.000352"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.044287" elapsed="0.000209"/>
-</kw>
-<var name="${index}">7</var>
-<status status="PASS" start="2025-02-13T16:31:21.044198" elapsed="0.000331"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.044665" elapsed="0.000168"/>
-</kw>
-<var name="${index}">8</var>
-<status status="PASS" start="2025-02-13T16:31:21.044589" elapsed="0.000277"/>
-</iter>
-<iter>
-<kw name="Set To Dictionary" owner="Collections">
-<arg>${ALPHA_NUM}</arg>
-<arg>${keys}[${index}]</arg>
-<arg>${values}[${index}]</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.044986" elapsed="0.000160"/>
-</kw>
-<var name="${index}">9</var>
-<status status="PASS" start="2025-02-13T16:31:21.044926" elapsed="0.000276"/>
-</iter>
-<var>${index}</var>
-<value>10</value>
-<status status="PASS" start="2025-02-13T16:31:21.041831" elapsed="0.003418"/>
-</for>
-<status status="PASS" start="2025-02-13T16:31:21.040912" elapsed="0.004427"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-02-13T16:31:21.045736" level="INFO">Initial List: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</msg>
-<arg>Initial List: ${NUMBERS}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.045604" elapsed="0.000171"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-02-13T16:31:21.046160" level="INFO">Initial Dictionary: {'a': '1', 'b': '2', 'c': '3', 'd': '4', 'e': '5', 'f': '6', 'g': '7', 'h': '8', 'i': '9', 'j': '10'}</msg>
-<arg>Initial Dictionary: ${ALPHA_NUM}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.045991" elapsed="0.000206"/>
-</kw>
-<kw name="Remove Last Element from List">
-<kw name="Delete Last Element" owner="remove_last">
-<msg time="2025-02-13T16:31:21.046831" level="INFO">${NUMBERS} = [1, 2, 3, 4, 5, 6, 7, 8, 9]</msg>
-<var>${NUMBERS}</var>
-<arg>${NUMBERS}</arg>
-<status status="PASS" start="2025-02-13T16:31:21.046699" elapsed="0.000152"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-02-13T16:31:21.047047" level="INFO">Updated List: [1, 2, 3, 4, 5, 6, 7, 8, 9]</msg>
-<arg>Updated List: ${NUMBERS}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.046944" elapsed="0.000137"/>
-</kw>
-<status status="PASS" start="2025-02-13T16:31:21.046424" elapsed="0.000700"/>
-</kw>
-<kw name="Remove Last Element from Dict">
-<kw name="Delete Last Element" owner="remove_last">
-<msg time="2025-02-13T16:31:21.047609" level="INFO">${ALPHA_NUM} = {'a': '1', 'b': '2', 'c': '3', 'd': '4', 'e': '5', 'f': '6', 'g': '7', 'h': '8', 'i': '9'}</msg>
-<var>${ALPHA_NUM}</var>
-<arg>${ALPHA_NUM}</arg>
-<status status="PASS" start="2025-02-13T16:31:21.047481" elapsed="0.000149"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-02-13T16:31:21.047797" level="INFO">Updated Dict: {'a': '1', 'b': '2', 'c': '3', 'd': '4', 'e': '5', 'f': '6', 'g': '7', 'h': '8', 'i': '9'}</msg>
-<arg>Updated Dict: ${ALPHA_NUM}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-02-13T16:31:21.047701" elapsed="0.000128"/>
-</kw>
-<status status="PASS" start="2025-02-13T16:31:21.047321" elapsed="0.000551"/>
-</kw>
-<status status="PASS" start="2025-02-13T16:31:21.035893" elapsed="0.012155"/>
+<status status="PASS" start="2025-02-19T15:48:43.124232" elapsed="18.328242"/>
 </test>
-<status status="PASS" start="2025-02-13T16:31:20.999544" elapsed="0.049174"/>
+<status status="PASS" start="2025-02-19T15:48:42.840424" elapsed="18.612639"/>
 </suite>
 <statistics>
 <total>
@@ -320,7 +98,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Assignment1" id="s1" pass="1" fail="0" skip="0">Assignment1</stat>
+<stat name="Amazon Login" id="s1" pass="1" fail="0" skip="0">Amazon Login</stat>
 </suite>
 </statistics>
 <errors>
