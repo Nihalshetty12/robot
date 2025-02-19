@@ -1,95 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-19T15:48:42.838210" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-19T16:15:15.394961" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Login" source="C:\Users\shett\PycharmProjects\robotframework\assignment_2\amazon_login.robot">
 <test id="s1-t1" name="Amazon Sign in" line="15">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-19T15:48:43.125560" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.in/?&amp;tag=googhydrabk1-21&amp;ref=pd_sl_5szpgfto9i_e&amp;adgrpid=155259813593&amp;hvpone=&amp;hvptwo=&amp;hvadid=674893540034&amp;hvpos=&amp;hvnetw=g&amp;hvrand=17906269698129276827&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9303628&amp;hvtargid=kwd-64107830&amp;hydadcr=14452_2316413&amp;gad_source=1'.</msg>
+<msg time="2025-02-19T16:15:15.661307" level="INFO">Opening browser 'Chrome' to base url 'https://www.amazon.in/?&amp;tag=googhydrabk1-21&amp;ref=pd_sl_5szpgfto9i_e&amp;adgrpid=155259813593&amp;hvpone=&amp;hvptwo=&amp;hvadid=674893540034&amp;hvpos=&amp;hvnetw=g&amp;hvrand=17906269698129276827&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9303628&amp;hvtargid=kwd-64107830&amp;hydadcr=14452_2316413&amp;gad_source=1'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-19T15:48:43.125265" elapsed="5.923026"/>
+<status status="PASS" start="2025-02-19T16:15:15.661056" elapsed="1.776638"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-19T15:48:49.049105" elapsed="0.158561"/>
+<status status="PASS" start="2025-02-19T16:15:17.439847" elapsed="1.428018"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T15:48:49.208966" level="INFO">Clicking element '//span[@id="nav-link-accountList-nav-line-1"]'.</msg>
+<msg time="2025-02-19T16:15:18.869324" level="INFO">Clicking element '//span[@id="nav-link-accountList-nav-line-1"]'.</msg>
 <arg>${ACCOUNTS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T15:48:49.208197" elapsed="1.162927"/>
+<status status="PASS" start="2025-02-19T16:15:18.868423" elapsed="2.362718"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T16:15:23.232175" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T16:15:21.231471" elapsed="2.000794"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${EMAIL_INPUT}</arg>
 <arg>3s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T15:48:50.371380" elapsed="0.020966"/>
+<status status="PASS" start="2025-02-19T16:15:23.232571" elapsed="0.022073"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T15:48:50.392837" level="INFO">Clicking element '//input[@id="ap_email"]'.</msg>
+<msg time="2025-02-19T16:15:23.255284" level="INFO">Clicking element '//input[@id="ap_email"]'.</msg>
 <arg>${EMAIL_INPUT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T15:48:50.392625" elapsed="0.060399"/>
+<status status="PASS" start="2025-02-19T16:15:23.254939" elapsed="0.048824"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T15:48:50.453833" level="INFO">Typing text 'shettynihal2004@gmail.com' into text field '//input[@id="ap_email"]'.</msg>
+<msg time="2025-02-19T16:15:23.304184" level="INFO">Typing text 'shettynihal2004@gmail.com' into text field '//input[@id="ap_email"]'.</msg>
 <arg>${EMAIL_INPUT}</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T15:48:50.453510" elapsed="0.098391"/>
+<status status="PASS" start="2025-02-19T16:15:23.303983" elapsed="0.110368"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T16:15:25.415463" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T16:15:23.414599" elapsed="2.000990"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${CONTINUE}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T15:48:50.552258" elapsed="0.017425"/>
+<status status="PASS" start="2025-02-19T16:15:25.415976" elapsed="0.018787"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T15:48:50.570258" level="INFO">Clicking element '//input[@id="continue"]'.</msg>
+<msg time="2025-02-19T16:15:25.435665" level="INFO">Clicking element '//input[@id="continue"]'.</msg>
 <arg>${CONTINUE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T15:48:50.569928" elapsed="0.524149"/>
+<status status="PASS" start="2025-02-19T16:15:25.435349" elapsed="0.399210"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${pass_input}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T15:48:51.094433" elapsed="0.176112"/>
+<status status="PASS" start="2025-02-19T16:15:25.834968" elapsed="0.598026"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-19T16:15:27.434222" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-19T16:15:26.433275" elapsed="1.001040"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T15:48:51.271207" level="INFO">Clicking element '//input[@id="ap_password"]'.</msg>
+<msg time="2025-02-19T16:15:27.434832" level="INFO">Clicking element '//input[@id="ap_password"]'.</msg>
 <arg>${PASS_INPUT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T15:48:51.270985" elapsed="0.050178"/>
+<status status="PASS" start="2025-02-19T16:15:27.434637" elapsed="0.043092"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-19T15:48:51.321619" level="INFO">Typing text 'Nihal@120304' into text field '//input[@id="ap_password"]'.</msg>
+<msg time="2025-02-19T16:15:27.478152" level="INFO">Typing text 'Nihal@120304' into text field '//input[@id="ap_password"]'.</msg>
 <arg>${PASS_INPUT}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T15:48:51.321400" elapsed="0.051943"/>
+<status status="PASS" start="2025-02-19T16:15:27.477948" elapsed="0.058982"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PASS_ENTER}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-19T15:48:51.373727" elapsed="0.014128"/>
+<status status="PASS" start="2025-02-19T16:15:27.537441" elapsed="0.017715"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-19T15:48:51.388280" level="INFO">Clicking element '//input[@id="signInSubmit"]'.</msg>
+<msg time="2025-02-19T16:15:27.560870" level="INFO">Clicking element '//input[@id="signInSubmit"]'.</msg>
 <arg>${PASS_ENTER}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-19T15:48:51.388088" elapsed="0.063193"/>
+<status status="PASS" start="2025-02-19T16:15:27.560574" elapsed="0.089925"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-19T15:49:01.452163" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-02-19T16:15:37.651476" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-19T15:48:51.451737" elapsed="10.000525"/>
+<status status="PASS" start="2025-02-19T16:15:27.650773" elapsed="10.000801"/>
 </kw>
-<status status="PASS" start="2025-02-19T15:48:43.124232" elapsed="18.328242"/>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-19T16:15:37.652094" elapsed="2.281023"/>
+</kw>
+<status status="PASS" start="2025-02-19T16:15:15.660133" elapsed="24.273287"/>
 </test>
-<status status="PASS" start="2025-02-19T15:48:42.840424" elapsed="18.612639"/>
+<status status="PASS" start="2025-02-19T16:15:15.397338" elapsed="24.536707"/>
 </suite>
 <statistics>
 <total>

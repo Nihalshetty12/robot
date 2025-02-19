@@ -9,19 +9,22 @@ ${EMAIL_INPUT}  //input[@id="ap_email"]
 ${EMAIL}        shettynihal2004@gmail.com
 ${CONTINUE}     //input[@id="continue"]
 ${PASS_INPUT}   //input[@id="ap_password"]
-${PASSWORD}     Nihal
+${PASSWORD}
 ${PASS_ENTER}   //input[@id="signInSubmit"]
 *** Test Cases ***
 Amazon Sign in
-    open browser    ${URL}      ${BROWSER}
+    open browser     ${URL}      ${BROWSER}
     maximize browser window
     click element    ${ACCOUNTS}
+    sleep    2s
     wait until element is visible    ${EMAIL_INPUT}     3s
     click element    ${EMAIL_INPUT}
-    input text      ${EMAIL_INPUT}    ${EMAIL}
+    input text       ${EMAIL_INPUT}    ${EMAIL}
+    sleep   2s
     wait until element is visible    ${CONTINUE}    10s
     click element    ${CONTINUE}
     wait until element is visible    ${pass_input}  10s
+    sleep   1s
     click element    ${PASS_INPUT}
     input text       ${PASS_INPUT}      ${PASSWORD}
     wait until element is visible    ${PASS_ENTER}      10s
