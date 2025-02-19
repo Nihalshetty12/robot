@@ -9,7 +9,7 @@ ${EMAIL_INPUT}  //input[@id="ap_email"]
 ${EMAIL}        shettynihal2004@gmail.com
 ${CONTINUE}     //input[@id="continue"]
 ${PASS_INPUT}   //input[@id="ap_password"]
-${PASSWORD}     Nihal@120304
+${PASSWORD}     Nihal
 ${PASS_ENTER}   //input[@id="signInSubmit"]
 *** Test Cases ***
 Amazon Sign in
