@@ -6,10 +6,10 @@ ${BROWSER}      Chrome
 ${ACCOUNTS}     //span[@id="nav-link-accountList-nav-line-1"]
 ${SIGN_IN}      //input[@id="nav-flyout-ya-signin"]
 ${EMAIL_INPUT}  //input[@id="ap_email"]
-${EMAIL}        shettynihal2004@gmail.com
+${EMAIL}        #your_email
 ${CONTINUE}     //input[@id="continue"]
 ${PASS_INPUT}   //input[@id="ap_password"]
-${PASSWORD}
+${PASSWORD}     #your_password
 ${PASS_ENTER}   //input[@id="signInSubmit"]
 *** Test Cases ***
 Amazon Sign in
