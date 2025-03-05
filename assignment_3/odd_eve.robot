@@ -19,6 +19,7 @@ Length of elements
 
     ${odd_words}=   sort list    ${odd_words}
     ${even_words}   sort list    ${even_words}
+
 *** Test Cases ***
 Output List
     List creation
