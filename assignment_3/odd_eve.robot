@@ -5,7 +5,7 @@ Library    Collections
 @{Words}    Rainbow  computer  science   programming   python   mathematics  player  condition   reverse    water   board   geeks
 @{odd_words}
 @{even_words}
-*** Test Cases ***
+*** Keywords ***
 List creation
     log    ${Words}
 Length of elements
@@ -19,7 +19,10 @@ Length of elements
 
     ${odd_words}=   sort list    ${odd_words}
     ${even_words}   sort list    ${even_words}
+*** Test Cases ***
 Output List
+    List creation
+    Length of elements
     log    Original list= ${Words}
     log    Even list= ${even_words}
     log    Odd list= ${odd_words}

@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-05T15:31:25.230348" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-05T16:20:17.021947" rpa="false" schemaversion="5">
 <suite id="s1" name="Odd Eve" source="C:\Users\shett\PycharmProjects\robotframework\assignment_3\odd_eve.robot">
-<test id="s1-t1" name="List creation" line="9">
+<test id="s1-t1" name="Output List" line="23">
+<kw name="List creation">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.268260" level="INFO">['Rainbow', 'computer', 'science', 'programming', 'python', 'mathematics', 'player', 'condition', 'reverse', 'water', 'board', 'geeks']</msg>
+<msg time="2025-03-05T16:20:17.064844" level="INFO">['Rainbow', 'computer', 'science', 'programming', 'python', 'mathematics', 'player', 'condition', 'reverse', 'water', 'board', 'geeks']</msg>
 <arg>${Words}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.268105" elapsed="0.000209"/>
+<status status="PASS" start="2025-03-05T16:20:17.064665" elapsed="0.000244"/>
 </kw>
-<status status="PASS" start="2025-03-05T15:31:25.267371" elapsed="0.001136"/>
-</test>
-<test id="s1-t2" name="Length of elements" line="11">
+<status status="PASS" start="2025-03-05T16:20:17.064116" elapsed="0.000877"/>
+</kw>
+<kw name="Length of elements">
 <for flavor="IN">
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.269886" level="INFO">Length is 7.</msg>
-<msg time="2025-03-05T15:31:25.269952" level="INFO">${len} = 7</msg>
+<msg time="2025-03-05T16:20:17.065842" level="INFO">Length is 7.</msg>
+<msg time="2025-03-05T16:20:17.065917" level="INFO">${len} = 7</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.269762" elapsed="0.000210"/>
+<status status="PASS" start="2025-03-05T16:20:17.065728" elapsed="0.000211"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.270249" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.066231" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.270052" elapsed="0.000218"/>
+<status status="PASS" start="2025-03-05T16:20:17.066035" elapsed="0.000221"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -34,54 +35,54 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.270352" elapsed="0.000128"/>
+<status status="PASS" start="2025-03-05T16:20:17.066355" elapsed="0.000144"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.270715" elapsed="0.000108"/>
+<status status="PASS" start="2025-03-05T16:20:17.066791" elapsed="0.000130"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.270566" elapsed="0.000298"/>
+<status status="PASS" start="2025-03-05T16:20:17.066615" elapsed="0.000359"/>
 </kw>
 <var name="${items}">Rainbow</var>
-<status status="PASS" start="2025-03-05T15:31:25.269657" elapsed="0.001236"/>
+<status status="PASS" start="2025-03-05T16:20:17.065648" elapsed="0.001362"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.271162" level="INFO">Length is 8.</msg>
-<msg time="2025-03-05T15:31:25.271217" level="INFO">${len} = 8</msg>
+<msg time="2025-03-05T16:20:17.067262" level="INFO">Length is 8.</msg>
+<msg time="2025-03-05T16:20:17.067325" level="INFO">${len} = 8</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.271031" elapsed="0.000204"/>
+<status status="PASS" start="2025-03-05T16:20:17.067168" elapsed="0.000178"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.271447" level="INFO">${remainder} = 0</msg>
+<msg time="2025-03-05T16:20:17.067597" level="INFO">${remainder} = 0</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.271313" elapsed="0.000154"/>
+<status status="PASS" start="2025-03-05T16:20:17.067425" elapsed="0.000194"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.271684" elapsed="0.000104"/>
+<status status="PASS" start="2025-03-05T16:20:17.067873" elapsed="0.000124"/>
 </kw>
 <arg>${remainder} == 0</arg>
 <arg>append to list</arg>
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.271542" elapsed="0.000285"/>
+<status status="PASS" start="2025-03-05T16:20:17.067707" elapsed="0.000337"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} != 0</arg>
@@ -89,26 +90,26 @@
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.271903" elapsed="0.000101"/>
+<status status="PASS" start="2025-03-05T16:20:17.068137" elapsed="0.000120"/>
 </kw>
 <var name="${items}">computer</var>
-<status status="PASS" start="2025-03-05T15:31:25.270977" elapsed="0.001060"/>
+<status status="PASS" start="2025-03-05T16:20:17.067106" elapsed="0.001194"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.272281" level="INFO">Length is 7.</msg>
-<msg time="2025-03-05T15:31:25.272330" level="INFO">${len} = 7</msg>
+<msg time="2025-03-05T16:20:17.068531" level="INFO">Length is 7.</msg>
+<msg time="2025-03-05T16:20:17.068601" level="INFO">${len} = 7</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.272201" elapsed="0.000147"/>
+<status status="PASS" start="2025-03-05T16:20:17.068443" elapsed="0.000177"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.272557" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.068847" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.272423" elapsed="0.000153"/>
+<status status="PASS" start="2025-03-05T16:20:17.068700" elapsed="0.000168"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -116,40 +117,40 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.272650" elapsed="0.000102"/>
+<status status="PASS" start="2025-03-05T16:20:17.068951" elapsed="0.000119"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.272971" elapsed="0.000123"/>
+<status status="PASS" start="2025-03-05T16:20:17.069313" elapsed="0.000161"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.272831" elapsed="0.000316"/>
+<status status="PASS" start="2025-03-05T16:20:17.069157" elapsed="0.000364"/>
 </kw>
 <var name="${items}">science</var>
-<status status="PASS" start="2025-03-05T15:31:25.272149" elapsed="0.001027"/>
+<status status="PASS" start="2025-03-05T16:20:17.068384" elapsed="0.001169"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.273370" level="INFO">Length is 11.</msg>
-<msg time="2025-03-05T15:31:25.273422" level="INFO">${len} = 11</msg>
+<msg time="2025-03-05T16:20:17.069790" level="INFO">Length is 11.</msg>
+<msg time="2025-03-05T16:20:17.069844" level="INFO">${len} = 11</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.273296" elapsed="0.000143"/>
+<status status="PASS" start="2025-03-05T16:20:17.069706" elapsed="0.000157"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.273640" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.070084" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.273510" elapsed="0.000149"/>
+<status status="PASS" start="2025-03-05T16:20:17.069939" elapsed="0.000166"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -157,54 +158,54 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.273737" elapsed="0.000105"/>
+<status status="PASS" start="2025-03-05T16:20:17.070186" elapsed="0.000113"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.274056" elapsed="0.000137"/>
+<status status="PASS" start="2025-03-05T16:20:17.070531" elapsed="0.000111"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.273920" elapsed="0.000312"/>
+<status status="PASS" start="2025-03-05T16:20:17.070382" elapsed="0.000302"/>
 </kw>
 <var name="${items}">programming</var>
-<status status="PASS" start="2025-03-05T15:31:25.273245" elapsed="0.001016"/>
+<status status="PASS" start="2025-03-05T16:20:17.069650" elapsed="0.001067"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.274467" level="INFO">Length is 6.</msg>
-<msg time="2025-03-05T15:31:25.274516" level="INFO">${len} = 6</msg>
+<msg time="2025-03-05T16:20:17.070934" level="INFO">Length is 6.</msg>
+<msg time="2025-03-05T16:20:17.070989" level="INFO">${len} = 6</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.274391" elapsed="0.000142"/>
+<status status="PASS" start="2025-03-05T16:20:17.070853" elapsed="0.000153"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.274740" level="INFO">${remainder} = 0</msg>
+<msg time="2025-03-05T16:20:17.071224" level="INFO">${remainder} = 0</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.274609" elapsed="0.000267"/>
+<status status="PASS" start="2025-03-05T16:20:17.071079" elapsed="0.000297"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.275156" elapsed="0.000188"/>
+<status status="PASS" start="2025-03-05T16:20:17.071633" elapsed="0.000110"/>
 </kw>
 <arg>${remainder} == 0</arg>
 <arg>append to list</arg>
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.274963" elapsed="0.000433"/>
+<status status="PASS" start="2025-03-05T16:20:17.071466" elapsed="0.000318"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} != 0</arg>
@@ -212,26 +213,26 @@
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.275504" elapsed="0.000127"/>
+<status status="PASS" start="2025-03-05T16:20:17.071859" elapsed="0.000106"/>
 </kw>
 <var name="${items}">python</var>
-<status status="PASS" start="2025-03-05T15:31:25.274330" elapsed="0.001339"/>
+<status status="PASS" start="2025-03-05T16:20:17.070797" elapsed="0.001202"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.275914" level="INFO">Length is 11.</msg>
-<msg time="2025-03-05T15:31:25.275974" level="INFO">${len} = 11</msg>
+<msg time="2025-03-05T16:20:17.072201" level="INFO">Length is 11.</msg>
+<msg time="2025-03-05T16:20:17.072252" level="INFO">${len} = 11</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.275819" elapsed="0.000174"/>
+<status status="PASS" start="2025-03-05T16:20:17.072124" elapsed="0.000146"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.276225" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.072480" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.276070" elapsed="0.000176"/>
+<status status="PASS" start="2025-03-05T16:20:17.072339" elapsed="0.000161"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -239,54 +240,54 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.276324" elapsed="0.000108"/>
+<status status="PASS" start="2025-03-05T16:20:17.072576" elapsed="0.000124"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.276663" elapsed="0.000107"/>
+<status status="PASS" start="2025-03-05T16:20:17.072916" elapsed="0.000108"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.276517" elapsed="0.000294"/>
+<status status="PASS" start="2025-03-05T16:20:17.072779" elapsed="0.000284"/>
 </kw>
 <var name="${items}">mathematics</var>
-<status status="PASS" start="2025-03-05T15:31:25.275757" elapsed="0.001083"/>
+<status status="PASS" start="2025-03-05T16:20:17.072071" elapsed="0.001020"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.277067" level="INFO">Length is 6.</msg>
-<msg time="2025-03-05T15:31:25.277129" level="INFO">${len} = 6</msg>
+<msg time="2025-03-05T16:20:17.073292" level="INFO">Length is 6.</msg>
+<msg time="2025-03-05T16:20:17.073342" level="INFO">${len} = 6</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.276973" elapsed="0.000174"/>
+<status status="PASS" start="2025-03-05T16:20:17.073212" elapsed="0.000146"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.277366" level="INFO">${remainder} = 0</msg>
+<msg time="2025-03-05T16:20:17.073560" level="INFO">${remainder} = 0</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.277222" elapsed="0.000164"/>
+<status status="PASS" start="2025-03-05T16:20:17.073425" elapsed="0.000156"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.277647" elapsed="0.000118"/>
+<status status="PASS" start="2025-03-05T16:20:17.073794" elapsed="0.000109"/>
 </kw>
 <arg>${remainder} == 0</arg>
 <arg>append to list</arg>
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.277482" elapsed="0.000326"/>
+<status status="PASS" start="2025-03-05T16:20:17.073655" elapsed="0.000287"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} != 0</arg>
@@ -294,26 +295,26 @@
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.277891" elapsed="0.000110"/>
+<status status="PASS" start="2025-03-05T16:20:17.074015" elapsed="0.000107"/>
 </kw>
 <var name="${items}">player</var>
-<status status="PASS" start="2025-03-05T15:31:25.276919" elapsed="0.001116"/>
+<status status="PASS" start="2025-03-05T16:20:17.073162" elapsed="0.000992"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.278283" level="INFO">Length is 9.</msg>
-<msg time="2025-03-05T15:31:25.278334" level="INFO">${len} = 9</msg>
+<msg time="2025-03-05T16:20:17.074350" level="INFO">Length is 9.</msg>
+<msg time="2025-03-05T16:20:17.074402" level="INFO">${len} = 9</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.278201" elapsed="0.000151"/>
+<status status="PASS" start="2025-03-05T16:20:17.074275" elapsed="0.000144"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.278564" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.074619" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.278423" elapsed="0.000160"/>
+<status status="PASS" start="2025-03-05T16:20:17.074486" elapsed="0.000152"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -321,40 +322,40 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.278659" elapsed="0.000130"/>
+<status status="PASS" start="2025-03-05T16:20:17.074714" elapsed="0.000103"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.279045" elapsed="0.000112"/>
+<status status="PASS" start="2025-03-05T16:20:17.075038" elapsed="0.000104"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.278882" elapsed="0.000316"/>
+<status status="PASS" start="2025-03-05T16:20:17.074896" elapsed="0.000286"/>
 </kw>
 <var name="${items}">condition</var>
-<status status="PASS" start="2025-03-05T15:31:25.278139" elapsed="0.001090"/>
+<status status="PASS" start="2025-03-05T16:20:17.074224" elapsed="0.000989"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.279436" level="INFO">Length is 7.</msg>
-<msg time="2025-03-05T15:31:25.279490" level="INFO">${len} = 7</msg>
+<msg time="2025-03-05T16:20:17.075416" level="INFO">Length is 7.</msg>
+<msg time="2025-03-05T16:20:17.075465" level="INFO">${len} = 7</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.279357" elapsed="0.000151"/>
+<status status="PASS" start="2025-03-05T16:20:17.075337" elapsed="0.000145"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.279719" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.075691" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.279583" elapsed="0.000155"/>
+<status status="PASS" start="2025-03-05T16:20:17.075557" elapsed="0.000153"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -362,40 +363,40 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.279819" elapsed="0.000109"/>
+<status status="PASS" start="2025-03-05T16:20:17.075787" elapsed="0.000109"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.280149" elapsed="0.000106"/>
+<status status="PASS" start="2025-03-05T16:20:17.076115" elapsed="0.000106"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.280008" elapsed="0.000288"/>
+<status status="PASS" start="2025-03-05T16:20:17.075973" elapsed="0.000287"/>
 </kw>
 <var name="${items}">reverse</var>
-<status status="PASS" start="2025-03-05T15:31:25.279305" elapsed="0.001054"/>
+<status status="PASS" start="2025-03-05T16:20:17.075287" elapsed="0.001004"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.280564" level="INFO">Length is 5.</msg>
-<msg time="2025-03-05T15:31:25.280740" level="INFO">${len} = 5</msg>
+<msg time="2025-03-05T16:20:17.076496" level="INFO">Length is 5.</msg>
+<msg time="2025-03-05T16:20:17.076621" level="INFO">${len} = 5</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.280485" elapsed="0.000275"/>
+<status status="PASS" start="2025-03-05T16:20:17.076418" elapsed="0.000223"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.280973" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.076856" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.280833" elapsed="0.000160"/>
+<status status="PASS" start="2025-03-05T16:20:17.076713" elapsed="0.000162"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -403,40 +404,40 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.281072" elapsed="0.000110"/>
+<status status="PASS" start="2025-03-05T16:20:17.076949" elapsed="0.000110"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.281402" elapsed="0.000104"/>
+<status status="PASS" start="2025-03-05T16:20:17.077279" elapsed="0.000110"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.281262" elapsed="0.000285"/>
+<status status="PASS" start="2025-03-05T16:20:17.077138" elapsed="0.000291"/>
 </kw>
 <var name="${items}">water</var>
-<status status="PASS" start="2025-03-05T15:31:25.280432" elapsed="0.001144"/>
+<status status="PASS" start="2025-03-05T16:20:17.076363" elapsed="0.001095"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.281779" level="INFO">Length is 5.</msg>
-<msg time="2025-03-05T15:31:25.281830" level="INFO">${len} = 5</msg>
+<msg time="2025-03-05T16:20:17.077658" level="INFO">Length is 5.</msg>
+<msg time="2025-03-05T16:20:17.077708" level="INFO">${len} = 5</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.281701" elapsed="0.000146"/>
+<status status="PASS" start="2025-03-05T16:20:17.077582" elapsed="0.000142"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.282051" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.077927" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.281916" elapsed="0.000155"/>
+<status status="PASS" start="2025-03-05T16:20:17.077791" elapsed="0.000155"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -444,40 +445,40 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.282148" elapsed="0.000107"/>
+<status status="PASS" start="2025-03-05T16:20:17.078017" elapsed="0.000106"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.282474" elapsed="0.000104"/>
+<status status="PASS" start="2025-03-05T16:20:17.078342" elapsed="0.000108"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.282334" elapsed="0.000283"/>
+<status status="PASS" start="2025-03-05T16:20:17.078204" elapsed="0.000285"/>
 </kw>
 <var name="${items}">board</var>
-<status status="PASS" start="2025-03-05T15:31:25.281649" elapsed="0.000996"/>
+<status status="PASS" start="2025-03-05T16:20:17.077529" elapsed="0.000987"/>
 </iter>
 <iter>
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.282844" level="INFO">Length is 5.</msg>
-<msg time="2025-03-05T15:31:25.282894" level="INFO">${len} = 5</msg>
+<msg time="2025-03-05T16:20:17.078716" level="INFO">Length is 5.</msg>
+<msg time="2025-03-05T16:20:17.078765" level="INFO">${len} = 5</msg>
 <var>${len}</var>
 <arg>${items}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.282769" elapsed="0.000146"/>
+<status status="PASS" start="2025-03-05T16:20:17.078637" elapsed="0.000145"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.283117" level="INFO">${remainder} = 1</msg>
+<msg time="2025-03-05T16:20:17.078989" level="INFO">${remainder} = 1</msg>
 <var>${remainder}</var>
 <arg>${len} % 2</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.282984" elapsed="0.000153"/>
+<status status="PASS" start="2025-03-05T16:20:17.078849" elapsed="0.000160"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <arg>${remainder} == 0</arg>
@@ -485,76 +486,75 @@
 <arg>${even_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.283209" elapsed="0.000103"/>
+<status status="PASS" start="2025-03-05T16:20:17.079082" elapsed="0.000105"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Append To List" owner="Collections">
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.283532" elapsed="0.000108"/>
+<status status="PASS" start="2025-03-05T16:20:17.079408" elapsed="0.000104"/>
 </kw>
 <arg>${remainder} != 0</arg>
 <arg>append to list</arg>
 <arg>${odd_words}</arg>
 <arg>${items}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.283390" elapsed="0.000291"/>
+<status status="PASS" start="2025-03-05T16:20:17.079268" elapsed="0.000286"/>
 </kw>
 <var name="${items}">geeks</var>
-<status status="PASS" start="2025-03-05T15:31:25.282717" elapsed="0.000993"/>
+<status status="PASS" start="2025-03-05T16:20:17.078586" elapsed="0.000997"/>
 </iter>
 <var>${items}</var>
 <value>@{Words}</value>
-<status status="PASS" start="2025-03-05T15:31:25.269380" elapsed="0.014355"/>
+<status status="PASS" start="2025-03-05T16:20:17.065482" elapsed="0.014124"/>
 </for>
 <kw name="Sort List" owner="Collections">
-<msg time="2025-03-05T15:31:25.284068" level="INFO">${odd_words} = None</msg>
+<msg time="2025-03-05T16:20:17.079785" level="INFO">${odd_words} = None</msg>
 <var>${odd_words}</var>
 <arg>${odd_words}</arg>
 <doc>Sorts the given list in place.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.283943" elapsed="0.000146"/>
+<status status="PASS" start="2025-03-05T16:20:17.079675" elapsed="0.000128"/>
 </kw>
 <kw name="Sort List" owner="Collections">
-<msg time="2025-03-05T15:31:25.284377" level="INFO">${even_words} = None</msg>
+<msg time="2025-03-05T16:20:17.079976" level="INFO">${even_words} = None</msg>
 <var>${even_words}</var>
 <arg>${even_words}</arg>
 <doc>Sorts the given list in place.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.284254" elapsed="0.000144"/>
+<status status="PASS" start="2025-03-05T16:20:17.079871" elapsed="0.000124"/>
 </kw>
-<status status="PASS" start="2025-03-05T15:31:25.268994" elapsed="0.015527"/>
-</test>
-<test id="s1-t3" name="Output List" line="22">
+<status status="PASS" start="2025-03-05T16:20:17.065294" elapsed="0.014749"/>
+</kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.285328" level="INFO">Original list= ['Rainbow', 'computer', 'science', 'programming', 'python', 'mathematics', 'player', 'condition', 'reverse', 'water', 'board', 'geeks']</msg>
+<msg time="2025-03-05T16:20:17.080340" level="INFO">Original list= ['Rainbow', 'computer', 'science', 'programming', 'python', 'mathematics', 'player', 'condition', 'reverse', 'water', 'board', 'geeks']</msg>
 <arg>Original list= ${Words}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.285202" elapsed="0.000162"/>
+<status status="PASS" start="2025-03-05T16:20:17.080219" elapsed="0.000156"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.285651" level="INFO">Even list= ['computer', 'player', 'python']</msg>
+<msg time="2025-03-05T16:20:17.080599" level="INFO">Even list= ['computer', 'player', 'python']</msg>
 <arg>Even list= ${even_words}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.285528" elapsed="0.000158"/>
+<status status="PASS" start="2025-03-05T16:20:17.080488" elapsed="0.000147"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-05T15:31:25.285960" level="INFO">Odd list= ['Rainbow', 'board', 'condition', 'geeks', 'mathematics', 'programming', 'reverse', 'science', 'water']</msg>
+<msg time="2025-03-05T16:20:17.080850" level="INFO">Odd list= ['Rainbow', 'board', 'condition', 'geeks', 'mathematics', 'programming', 'reverse', 'science', 'water']</msg>
 <arg>Odd list= ${odd_words}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-05T15:31:25.285849" elapsed="0.000146"/>
+<status status="PASS" start="2025-03-05T16:20:17.080744" elapsed="0.000138"/>
 </kw>
-<status status="PASS" start="2025-03-05T15:31:25.284937" elapsed="0.001170"/>
+<status status="PASS" start="2025-03-05T16:20:17.063359" elapsed="0.017641"/>
 </test>
-<status status="PASS" start="2025-03-05T15:31:25.231712" elapsed="0.054929"/>
+<status status="PASS" start="2025-03-05T16:20:17.023983" elapsed="0.057697"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Odd Eve" id="s1" pass="3" fail="0" skip="0">Odd Eve</stat>
+<stat name="Odd Eve" id="s1" pass="1" fail="0" skip="0">Odd Eve</stat>
 </suite>
 </statistics>
 <errors>
